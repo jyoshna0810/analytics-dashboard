@@ -1,0 +1,91 @@
+:root{
+    
+    --head-shadow: #1111112b;
+    --font-sofia: sofia-pro,sans-serif;
+}
+.main-head{
+    font-family: var(--font-sofia);
+    font-size: 20px;
+    box-shadow: 0 15px 10px -15px var(--head-shadow);
+}
+.main-head h1{
+    margin-left: 10px;
+}
+#main-text{
+    font-family: var(--font-sofia);
+    margin-left: 440px;
+}
+body{
+    background:white;
+}
+.container{
+    top:25%;
+    left:27%;
+    position:absolute;
+
+}
+.custom-file-input{
+    font-family: var(--font-sofia);
+    font-size: 16px;
+    background: white;
+    border-radius: 50px; 
+    box-shadow: 5px 5px 10px  var(--head-shadow);
+    width: 750px;
+    outline: none;
+}
+::-webkit-file-upload-button{
+    color: white;
+    background: #206a5d;
+    padding: 20px;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+}
+.btn-primary{
+    position: absolute;
+    cursor: pointer;
+    margin-left: 100px;
+    outline: 0;
+    background-color:#206a5d;
+    color: #fff;
+    padding: 19px 30px;
+    border-radius: 50px;
+    font-size: 18px;
+    text-decoration: none!important;
+    border: 0;
+    white-space: nowrap;
+}
+.upload-bar{
+    margin-left: 34%;
+}
+.upload-bar h2{
+    font-family: var(--font-sofia);
+    margin-left: 46px;
+}
+#myProgress {
+    width: 50%;
+    background-color: #ddd;
+    border-radius:50px;
+}
+  
+#myBar {
+    width: 6%;
+    height: 30px;
+    border-radius:50px;
+    background-color:#206a5d;
+}
+.btn-download{
+    margin-left: 40%;
+    position: absolute;
+    cursor: pointer;
+    outline: 0;
+    background-color:#206a5d;
+    color: #fff;
+    padding: 19px 30px;
+    border-radius: 50px;
+    font-size: 18px;
+    text-decoration: none!important;
+    border: 0;
+    white-space: nowrap;
+    
+}

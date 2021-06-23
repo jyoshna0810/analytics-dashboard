@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>visualize</title>
+  <link rel="stylesheet" href="../static/index.css">
+</head>
+<body>
+    <div class="main-head">
+      <h1>UPLOAD</h1>
+    </div>
+    <h2 id="main-text">Choose and upload a  'xlsx' or 'csv' file to get your plot</h2>
+    <div class="container">
+      <form action="/upload" method="POST" enctype="multipart/form-data">
+          <input type="file" class="custom-file-input" name="image" id="image">
+        </label>
+        <button type="submit" class="btn-primary" onclick="show()">Upload</button>
+      </form>
+      <div class="upload-bar" id="Uploading" style="display: none;">
+        <h2>Uploading..</h2>
+        <div id="myProgress">
+           <div id="myBar" ></div>
+        </div>
+        <br>
+      </div>
+      <div class="show-div" id = "preview-div" style="display: none;">
+        <a href="/download/{{value}}"><button class="btn-download">Download</button></a>
+      </div>
+    </div>
+<script>
+  var i = 0;
+function show() {
+  document.getElementById("Uploading").style.display = "block";
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar");
+    var width = 1;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+      }
+    }
+  }
+ setInterval(function(){ document.getElementById('preview-div').style.display = "block";},4000)
+}
+</script>
+</body>
+</html>

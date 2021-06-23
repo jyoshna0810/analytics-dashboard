@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width = device-width, initial-scalde = 1">
+        <title>Visualize</title>
+        <link rel="stylesheet" type="text/css" href="../static/dashboard.css">
+    </head>
+    <body>
+        <div class="top-nav">
+            <a class="header-main__heading" href=#><p><h1>Training Analytics DashBoard</h1></p></a>
+        </div>
+        <div class="main">
+            <section class="go-from-one-click">
+                <div class="main-section">
+                    <div class="section-heading">
+                        <h1 style="text-align: left; display:flex; flex-direction: column; align-items: center">Go from file to visualization in one click</h1>
+                    </div>
+                    <div class="section-text">
+                        <p style="text-align: left; display:flex; flex-direction: column; align-items: center">
+                            Got tired of analysing the large files.It's time to quit the traditional way of analysing the data.
+                            Let's explore the data through visuals.Let the fun begin...<br>
+                            Wait!!But how to convert your files to visuals.Don't get tensed🥺.We are here to help you.
+                            Just click the button below and upload your file which you want to convert.Choose the columns which you 
+                            want to plot and type of plot and done!😀. 
+                        </p>
+                    </div>
+                    <div class="try-out">
+                        <form action ="/upload" method="POST">
+                        <a type="button" href="/upload" class="try-it-out">Try it Out</a>
+                        </form>
+                    </div>
+                    <div class="example-picture">
+                        <img src="../static/plot_bar.png" alt="plot" id ="barplot">
+                        <img src="../static/pie.png" alt="pie" id="pieplot">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

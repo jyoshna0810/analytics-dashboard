@@ -1,0 +1,75 @@
+:root{
+    --head-shadow: #1111112b;
+    --color: #308D46;
+    --font-sofia: sofia-pro,sans-serif;
+    --font:'Brush Script MT', cursive;
+}
+body{
+    margin: 0;
+}
+.top-nav{
+    overflow: hidden;
+    box-shadow: 0 15px 10px -15px var(--head-shadow);
+}
+a {
+    text-decoration: none;
+}
+.header-main__heading{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 35%;
+    float: left;
+    color: black;
+}
+.main{
+    margin: 0;
+}
+.main-section{
+    background: content-box;
+    width: 750px;
+    margin-left: 10%;
+
+}
+.section-heading{
+    background: content-box;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 25px;
+    text-align: center;
+    font-family: var(--font);
+
+}
+.section-text p{
+    font-size: 20px;
+    text-align: center;
+    font-family: var(--font-sofia);
+    margin-left: 10%;
+    margin-right: 10%;   
+}
+.try-it-out{
+    position: absolute;
+    margin-left: 18%;    
+    cursor: pointer;
+    outline: 0;
+    background-color: rgb(93, 93, 238);
+    color: #fff;
+    font-family: var(--font-sofia);
+    padding: 8px 27px;
+    border-radius: 5px;
+    font-size: 1.325rem;
+    text-decoration: none!important;
+    border: 0;
+    white-space: nowrap;
+}
+#barplot{
+    width: 430px;
+    height: 400px;
+    margin-left: 780px;
+    margin-top: -320px;
+}
+#pieplot{
+    width: 430px;
+    height: 300px;
+    margin-left: 900px;
+    margin-top: -250px;
+}
